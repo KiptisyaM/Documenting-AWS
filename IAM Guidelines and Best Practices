@@ -1,0 +1,30 @@
+🔐 AWS IAM Best Practices – Summary Guide
+📌 Overview
+Are you a new user in the AWS Cloud and looking to understand how to manage identity and access securely?
+This short guide highlights key best practices for using **AWS Identity and Access Management (IAM)** — a crucial service that helps control **who is authenticated and authorized** to use AWS resources.
+IAM is part of the **"Security in the Cloud"** responsibility under the [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/). While AWS ensures the security *of* the cloud (e.g., hardware, infrastructure), it is the customer’s responsibility to secure what is *in* the cloud — like access, permissions, and resource usage.
+
+🛡️ IAM Best Practices Checklist
+1. **🔒 Avoid using the Root Account**
+   - Only use it for initial account setup and secure it with MFA.
+2. **👤 One Physical User = One IAM User**
+   - Never share credentials across users. Each person should have their own IAM user account.
+3. **👥 Use Groups to Assign Permissions**
+   - Assign permissions to groups, not individual users. Add users to the appropriate group.
+4. **🔐 Define a Strong Password Policy**
+   - Enforce length, complexity, expiration, and reuse rules to increase account security.
+5. **📱 Use Multi-Factor Authentication (MFA)**
+   - Require MFA for root and IAM users to add an extra layer of protection.
+6. **🧾 Use IAM Roles for Services or Cross-Account Access**
+   - Instead of long-term credentials, use roles for secure temporary access.
+7. **🛠️ Use Access Keys Only for Programmatic Access**
+   - Never embed access keys in your code. Rotate them regularly.
+8. **🕵️‍♀️ Regularly Audit IAM Usage**
+   - Use tools like **IAM Credentials Report** and **IAM Access Advisor** to review account permissions and remove unused access.
+
+📂 Resources & References
+- [AWS IAM Documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html)
+- [AWS Security Best Practices Whitepaper](https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Best_Practices.pdf)
+- [AWS IAM Credentials Report](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_getting-report.html)
+- [AWS Free Tier](https://aws.amazon.com/free/)
+
